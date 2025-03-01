@@ -1,5 +1,6 @@
     
     let amigos = [];
+    let amigosSorteados = [];
 
     function adicionarAmigo(){
       let inputAmigo = document.getElementById('amigo');
@@ -42,11 +43,24 @@
         return;
       }
 
-      let sorteado = amigos[Math.floor(Math.random()* amigos.length)];
+      let amigosNaoSorteados = amigos.filter(amigo => !amigosSorteados.includes(amigo));
+
+      if(amigosNaoSorteados.length===0){
+        alert("Todos os amigos já foram sorteados. Reinicie a lista para sortear novamente.");
+        return;
+      }
+
+
+      let sorteado = amigosNaoSorteados[Math.floor(Math.random()* amigosSorteados.length)];
+      amigosSorteados.push(sorteado);
       let resultado = document.getElementById("resultado");
 
-      resultado.innerHTML = `O amigo sorteado foi: ${sorteado}`
-    
+      if (sorteado) {
+        resultado.innerHTML = `O amigo sorteado foi: ${sorteado}`;
+    } else {
+        resultado.innerHTML = "click novamente"; // Limpa a mensagem se nenhum amigo foi sorteado
+    }
+
       let limparLista = document.getElementById("listaAmigos");
       limparLista.innerHTML=''
       dispararFogos()
@@ -54,6 +68,7 @@
      
     function reiniciarLista() {
       amigos = [];
+      amigosSorteados=[];
       document.getElementById('listaAmigos').innerHTML = '';
       document.getElementById('resultado').innerHTML = '';
      
