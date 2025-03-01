@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #4bfd7a;
+    --color-secondary: #c5c3bd;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
@@ -65,7 +65,7 @@ body {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #514003;
     margin: 10px 0;
     text-align: center;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 /* Estilos de botão */
-button {
+button{
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -116,7 +116,7 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: #4bfd7a;
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
@@ -134,9 +134,11 @@ ul {
     margin: 20px 0;
 }
 
+
+
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #514003;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -157,9 +159,18 @@ ul {
     margin-right: 40px;
 }
 
-.button-draw:hover {
-    background-color: var(--color-button-hover);
+.button-draw:hover  {
+    background-color: #a1a1a1
 }
 
+#reniciar{
+   color: #f0f1f3; 
+   background-color: #4bfd7a;
+   margin-top: 10px;
+}
+
+#reniciar:hover{
+   background-color:#a1a1a1;
+}
 
 
