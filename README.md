@@ -3,7 +3,7 @@
  <p>Amigo secreto👩🏽👨🏻👦🏿👴🏾🎁</p>
 </h1>
 
-<h1> <a href="amigo-secreto-five-swart.vercel.app">Veja o Projeto</a></h1>
+<h1> <a href="https://amigo-secreto-five-swart.vercel.app/">Veja o Projeto</a></h1>
 
 ## 📕Sobre.
 <p>Este projeto é um simples sorteador de amigos desenvolvido com HTML, CSS e JavaScript. Ele permite adicionar nomes de amigos a uma lista, sortear um amigo aleatoriamente e exibir o resultado com uma animação de fogos de artifício.</p>
